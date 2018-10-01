@@ -16,6 +16,7 @@ h1 {
 .social-icons {
     text-align: center;
     font-family: monospace;
+    position: relative;
 }  
 
 .search {
@@ -28,8 +29,7 @@ h1 {
     -webkit-user-select:none;
     -moz-user-select:none;
 }
-.social-icons li a {
-    border-bottom: none;
+.social-icons li a { border-bottom: none;
 }
 .social-icons li img {
     width:50px;
@@ -39,5 +39,6 @@ h1 {
 .header-content {
     display: flex;
     justify-content : center; 
-    justify-content : space-between
+    justify-content : space-between;
+    background-color: rgb(60, 175, 195);
 }

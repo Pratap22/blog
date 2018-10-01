@@ -14,7 +14,7 @@ const BlogHeader = () => {
                 </div>
                 <div className='welcome'>
                     <h1>World Destinations</h1>
-                    <h2>Welcome to World Destinations! Explore every destinations of the world</h2>
+                    <h2>Welcome to World Destinations! Explore every destinations of the world.</h2>
                 </div>
                 <div>
                     <div>
