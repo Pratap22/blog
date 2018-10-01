@@ -4,27 +4,31 @@
     justify-content : space-between;
 }
 
-.content {
-    text-align: justify;
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
 .flex > * {
     width: 200px;
   }
 
 .one {
     flex: 2 4 auto;
+    position: sticky;
 }
 
 .two {
     flex: 1 1 auto;
 }
 
+.TwoOne {
+    flex: 1 1 auto;
+}
+
+.TwoTwo {
+    flex:2 4 auto;
+    padding-right: 20px;
+}
+
 .dropdown {
     width:200px;
-    font-size: 30px;
+    font-size: 22.5px;
     margin-top: 20px;
     font-weight: bold;
 }
@@ -36,4 +40,71 @@ select {
 option {
     background-color: rgb(236, 192, 249);
     color: black;
+}
+.dim {
+    background: rgb(55, 173, 191);
+    justify-items: center;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    margin-inline-end: 100px;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+
+.signin {
+    font-size: 2.25rem;
+    font-weight: 600;
+}
+
+.article {
+    border: 1px solid black;
+    padding: 30px;
+    margin-bottom: 2rem;
+    width: 100%;
+}
+
+.imgsize{
+    height: auto;
+    width: 800px;
+    display: block;
+    padding-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.pblock {
+    text-align: justify;
+    margin-top: -10px;
+    margin-bottom: 25px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.text {
+    font-weight: 600;
+}
+
+.pLabel {
+    line-height: 1.2;
+    font-size: 2rem;
+    text-anchor: end;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+}
+
+.iInput {
+    border-style: solid;
+    border-width: 1px;
+    background-color: transparent;
+    font-weight: bold;
+    padding: .5rem;
+    justify-self: end;
+    color: black;
+}
+
+.epInput {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }

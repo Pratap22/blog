@@ -10,6 +10,7 @@ class App extends Component {
                 <About />
                 {/* <Signin />
                 <Register /> */}
+                <footer className='measure center'> Website Designed by Pratap Sharma</footer>
             </div>
         )
 
