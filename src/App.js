@@ -6,7 +6,7 @@ class App extends Component {
         return (
             <div>
                 <BlogHeader />
-                <About />
+                {/* <About /> */}
                 {/* <Signin />
                 <Register /> */}
             </div>
@@ -14,3 +14,4 @@ class App extends Component {
 
     }
 }
+export default App
