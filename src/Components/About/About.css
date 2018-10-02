@@ -2,15 +2,7 @@
     display: flex;
     justify-content : center; 
     justify-content : space-between;
-}
-
-.flex > * {
-    width: 200px;
-  }
-
-.one {
-    flex: 2 4 auto;
-    position: sticky;
+    margin-top: 0px;
 }
 
 .two {
@@ -26,16 +18,8 @@
     padding-right: 20px;
 }
 
-.dropdown {
-    width:200px;
-    font-size: 22.5px;
-    margin-top: 20px;
-    font-weight: bold;
-}
 
-select {
-    background-color: rgb(55, 173, 191);
-}
+
 
 option {
     background-color: rgb(236, 192, 249);
@@ -60,20 +44,23 @@ option {
 .article {
     border: 1px solid black;
     padding: 30px;
+    margin-top: 30px;
     margin-bottom: 2rem;
     width: 100%;
 }
 
 .imgsize{
-    height: auto;
-    width: 800px;
-    display: block;
-    padding-bottom: 20px;
+    float: left;
+    height: 290px;
+    width: 480px;
+    padding: 1.633%;
     margin-left: auto;
     margin-right: auto;
 }
 
 .pblock {
+    font-family: cursive;
+    font-size: 22px;
     text-align: justify;
     margin-top: -10px;
     margin-bottom: 25px;

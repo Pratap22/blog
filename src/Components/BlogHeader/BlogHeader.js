@@ -14,19 +14,15 @@ const BlogHeader = () => {
                 </div>
                 <div className='welcome'>
                     <h1>World Destinations</h1>
-                    <h2>Welcome to World Destinations! Explore every destinations of the world.</h2>
+                    <p>Welcome to World Destinations! Explore every destinations of the world.</p>
                 </div>
                 <div>
                     <div>
                         <ul className="social-icons"> 
-                            <li><a href="http://www.facebook.com/prataps22" target="_blank" rel='noopener noreferrer' ><img alt='facebook' src={facebook} /></a></li>
+                            <li><a id='fb' href="http://www.facebook.com/prataps22" target="_blank" rel='noopener noreferrer' ><img alt='facebook' src={facebook} /></a></li>
                             <li><a href="https://twitter.com/Pratap2210" target="_blank" rel='noopener noreferrer'><img alt='twitter' src={twitter} /></a></li>
                             <li><a href="https://www.linkedin.com/in/prataps22/" target="_blank" rel='noopener noreferrer'><img alt='linkedin' src={linkedin} /></a></li>
                         </ul>
-                    </div>
-                    <div className='search'>
-                        <input type='text' placeholder='Search Destination' />
-                        <input type='submit' value='Search' />
                     </div>
                 </div>
             </div>
