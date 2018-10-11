@@ -1,0 +1,22 @@
+.imgSize {
+  height: 100%;
+  width: 450px;
+  font-size: 1.14285714rem;
+}
+#countryFont {
+  color: azure;
+}
+
+.ui.list > .item a.header {
+  color: #99f5b1 !important;
+}
+
+.ui.items > .item > .image > img {
+  height: 100%;
+}
+.ui.items > .item > .content > a.header:hover {
+  color: #81a3c2;
+}
+.ui.items > .item > .content > a.header {
+  color: #c1d7eb;
+}
