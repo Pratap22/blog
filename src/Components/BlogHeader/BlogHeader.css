@@ -12,7 +12,7 @@ h1 {
 
 .welcome {
   text-align: center;
-  color: azure;
+  color: rgb(15, 14, 14);
 }
 
 .social-icons {
@@ -37,6 +37,5 @@ h1 {
   display: flex;
   justify-content: center;
   justify-content: space-between;
-  background-image: url('header.jpg');
   padding-bottom: 0;
 }

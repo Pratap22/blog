@@ -11,7 +11,7 @@ const CountryDropdown = ({ onDropdownChange, onStateChange }) => {
         Home
       </div>
       <Dropdown
-        className="countrycss"
+        className="countrycss small"
         placeholder="Asia"
         search
         selection
@@ -19,7 +19,7 @@ const CountryDropdown = ({ onDropdownChange, onStateChange }) => {
         onChange={onDropdownChange}
       />
       <Dropdown
-        className="countrycss"
+        className="countrycss small"
         placeholder="Europe"
         search
         selection

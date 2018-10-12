@@ -4,11 +4,14 @@
   font-size: 1.14285714rem;
 }
 #countryFont {
-  color: azure;
+  font-family: Lato, sans-serif;
+  color: rgb(18, 20, 20);
+  line-height: 27px;
+  font-size: 15px;
 }
 
 .ui.list > .item a.header {
-  color: #99f5b1 !important;
+  color: #101612 !important;
 }
 
 .ui.items > .item > .image > img {
@@ -18,5 +21,14 @@
   color: #81a3c2;
 }
 .ui.items > .item > .content > a.header {
-  color: #c1d7eb;
+  color: #5ba4e9;
+}
+
+.ui.list > .item .header {
+  font-weight: 800;
+  font-size: 17px;
+}
+.ui.items > .item > .content > .header {
+  font-weight: 900;
+  font-size: 21px !important;
 }

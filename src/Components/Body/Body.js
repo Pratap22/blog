@@ -9,9 +9,8 @@ const Body = ({ path }) => {
   return (
     <div className="bodyClass">
       {(() => {
+        console.log(path);
         switch (path) {
-          case '':
-            return <Home />;
           case 'home':
             return <Home />;
           case 'in':
@@ -20,8 +19,6 @@ const Body = ({ path }) => {
             return <Nepal />;
           case 'bt':
             return <Bhutan />;
-          default:
-            return <Home />;
         }
       })()}
     </div>

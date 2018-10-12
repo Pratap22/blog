@@ -3,8 +3,7 @@ body {
   padding-left: 20px;
   padding-right: 15px;
   font-family: 'Courier New', Courier, monospace;
-  background-color: rgb(219, 247, 251);
-  background-image: url('header.jpg');
+  background-color: #fff;
 }
 
 button {

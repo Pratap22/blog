@@ -1,5 +1,5 @@
 export const asiaOptions = [
-  { key: '', value: '', flag: '', text: 'Asia' },
+  { key: '', value: ' ', flag: '', text: 'Asia' },
   { key: 'np', value: 'np', flag: 'np', text: 'Nepal' },
   { key: 'in', value: 'in', flag: 'in', text: 'India' },
   { key: 'bt', value: 'bt', flag: 'bt', text: 'Bhutan' },
@@ -8,7 +8,7 @@ export const asiaOptions = [
 ];
 
 export const europeOptions = [
-  { key: '', value: '', flag: '', text: 'Europe' },
+  { key: '', value: ' ', flag: '', text: 'Europe' },
   { key: 'fr', value: 'fr', flag: 'fr', text: 'France' },
   { key: 'it', value: 'it', flag: 'it', text: 'Italy' },
   { key: 'gb', value: 'gb', flag: 'gb', text: 'England' },
@@ -17,7 +17,7 @@ export const europeOptions = [
 ];
 
 export const africaOptions = [
-  { key: '', value: '', flag: '', text: 'Africa' },
+  { key: '', value: ' ', flag: '', text: 'Africa' },
   { key: 'tz', value: 'tz', flag: 'tz', text: 'Tanzania' },
   { key: 'za', value: 'za', flag: 'za', text: 'South Africa' },
   { key: 'ma', value: 'ma', flag: 'ma', text: 'Morocco' },
@@ -28,7 +28,7 @@ export const africaOptions = [
 ];
 
 export const northAmericaOptions = [
-  { key: '', value: '', flag: '', text: 'North America' },
+  { key: '', value: ' ', flag: '', text: 'North America' },
   { key: 'us', value: 'us', flag: 'us', text: 'United States' },
   { key: 'ca', value: 'ca', flag: 'ca', text: 'Canada' },
   { key: 'mx', value: 'mx', flag: 'mx', text: 'Mexico' },
@@ -37,7 +37,7 @@ export const northAmericaOptions = [
 ];
 
 export const southAmericaOptions = [
-  { key: '', value: '', flag: '', text: 'South America' },
+  { key: '', value: ' ', flag: '', text: 'South America' },
   { key: 'br', value: 'br', flag: 'br', text: 'Brazil' },
   { key: 'ar', value: 'ar', flag: 'ar', text: 'Argentina' },
   { key: 'co', value: 'co', flag: 'co', text: 'Colombia' },
@@ -47,7 +47,7 @@ export const southAmericaOptions = [
 ];
 
 export const oceania = [
-  { key: '', value: '', flag: '', text: 'Oceania' },
+  { key: '', value: ' ', flag: '', text: 'Oceania' },
   { key: 'au', value: 'au', flag: 'au', text: 'Australia' },
   { key: 'pg', value: 'pg', flag: 'pg', text: 'New Guinea' },
   { key: 'nz', value: 'nz', flag: 'nz', text: 'New Zealand' },
