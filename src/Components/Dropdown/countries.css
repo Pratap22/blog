@@ -1,9 +1,60 @@
+@import '../../Common/flexbogrid.css';
 placeholder {
   color: black;
 }
 .countrycss {
   margin-right: 1px;
 }
-#countryDropdown {
+.countryDropdown {
   margin-top: 5px;
+}
+
+.ui.selection.dropdown {
+  min-width: 15px !important;
+}
+.icon {
+  font-size: 30px;
+}
+.topnav .icon {
+  display: none;
+}
+.topnav {
+  justify-content: flex-end;
+  text-align: end;
+}
+
+@media screen and (max-width: 880px) {
+  .topnav a {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 880px) {
+  .topnav.responsive {
+    position: relative;
+  }
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+  }
+  .topnav.responsive a {
+    float: right;
+    display: block;
+    text-align: right;
+  }
+  .topnav.responsive .countrycss {
+    float: none;
+  }
+
+  .topnav.responsive {
+    display: block;
+    width: 100%;
+    text-align: right;
+  }
 }
