@@ -14,17 +14,17 @@ const CountryDropdown = ({ onDropdownChange, onStateChange }) => {
   }
   return (
     <div className="countryDropdown flexrow">
-      <div className="col-lg-2 col-md-2 col-sm-2">
-        <div className="ui button" value="home" tabIndex="0" onClick={onStateChange}>
+      <div className="col-lg-1 col-md-1 col-xs-11 ">
+        <div className="ui extra-small button" value="home" tabIndex="0" onClick={onStateChange}>
           <Icon name="home" />
           Home
         </div>
       </div>
-      <div className="col-lg-10 col-md-10 col-sm-10 col-xm-10 end-xs end-sm end-md end-lg">
+      <div className="col-lg-11 col-md-11 popup menu-item visible col-xs-1 end-xs end-sm end-md end-lg">
         <div className="topnav" id="myTopnav">
           <a href="#">
             <Dropdown
-              className="countrycss"
+              className="countrycss small"
               placeholder="Asia"
               search
               selection
@@ -34,7 +34,7 @@ const CountryDropdown = ({ onDropdownChange, onStateChange }) => {
           </a>
           <a href="#">
             <Dropdown
-              className="countrycss"
+              className="countrycss small"
               placeholder="Europe"
               search
               selection
@@ -44,7 +44,7 @@ const CountryDropdown = ({ onDropdownChange, onStateChange }) => {
           </a>
           <a href="#">
             <Dropdown
-              className="countrycss"
+              className="countrycss small"
               placeholder="Africa"
               search
               selection
@@ -54,7 +54,7 @@ const CountryDropdown = ({ onDropdownChange, onStateChange }) => {
           </a>
           <a href="#">
             <Dropdown
-              className="countrycss"
+              className="countrycss small"
               placeholder="North America"
               search
               selection
@@ -64,7 +64,7 @@ const CountryDropdown = ({ onDropdownChange, onStateChange }) => {
           </a>
           <a href="#">
             <Dropdown
-              className="countrycss"
+              className="countrycss small"
               placeholder="South America"
               search
               selection
@@ -73,7 +73,14 @@ const CountryDropdown = ({ onDropdownChange, onStateChange }) => {
             />
           </a>
           <a href="#">
-            <Dropdown placeholder="Oceania" search selection options={Options.oceania} onChange={onDropdownChange} />
+            <Dropdown
+              className="countrycss small"
+              placeholder="Oceania"
+              search
+              selection
+              options={Options.oceania}
+              onChange={onDropdownChange}
+            />
           </a>
           <a href="#" className="icon" id="iconId" onClick={collapseFunction}>
             &#9776;

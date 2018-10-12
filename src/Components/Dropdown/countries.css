@@ -9,11 +9,27 @@ placeholder {
   margin-top: 5px;
 }
 
+.medium-col-11 {
+  flex-basis: 91.667%;
+  max-width: 91.667%;
+}
+.medium-col-1 {
+  flex-basis: 91.667%;
+  max-width: 91.667%;
+}
+.ui.button {
+  padding-left: 10px !important;
+  padding-right: 10px !important;
+  padding-top: 0 !important;
+  padding-bottom: 10px !important;
+}
+
 .ui.selection.dropdown {
   min-width: 15px !important;
 }
 .icon {
   font-size: 30px;
+  margin-top: 11px !important;
 }
 .topnav .icon {
   display: none;
@@ -23,17 +39,17 @@ placeholder {
   text-align: end;
 }
 
-@media screen and (max-width: 880px) {
+@media screen and (max-width: 1025px) {
   .topnav a {
     display: none;
   }
   .topnav a.icon {
-    float: right;
+    right: 0;
     display: block;
   }
 }
 
-@media screen and (max-width: 880px) {
+@media screen and (max-width: 1025px) {
   .topnav.responsive {
     position: relative;
   }

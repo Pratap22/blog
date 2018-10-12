@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import CountryDropdown from './Components/Dropdown/CountryDropdown';
 import BlogHeader from './Components/BlogHeader/BlogHeader.js';
 import Body from './Components/Body/Body';
-
+import Footer from './Components/Footer/Footer';
 const initialState = {
   value: '',
   country: '',
@@ -30,7 +30,7 @@ class App extends Component {
         <Body path={this.state.path} />
         {/* <Signin />
                 <Register /> */}
-        <footer className="measure center bottom"> Website Designed by Pratap Sharma</footer>
+        <Footer />
       </div>
     );
   }
