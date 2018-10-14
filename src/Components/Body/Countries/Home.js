@@ -1,22 +1,18 @@
 import React from 'react';
 import '../Body';
 import './Common.css';
-import { Grid, Image } from 'semantic-ui-react';
 
 const Home = () => {
   return (
     <div>
-      <Grid>
-        <Grid.Column mobile={16} tablet={6} computer={6}>
-          <Image className="ui image imgSize" src="img/in1.jpg" />
-        </Grid.Column>
-        <Grid.Column mobile={16} tablet={5} computer={5}>
-          <Image className="ui image imgSize" src="img/np1.jpg" />
-        </Grid.Column>
-        <Grid.Column mobile={16} tablet={5} computer={5}>
-          <Image className="ui image imgSize" src="img/np5.jpg" />
-        </Grid.Column>
-      </Grid>
+      <div className="flexrow">
+        <div className="col-lg-6 col-md-6 col-sm-6 col-xm-12 center-xm">
+          <img alt="Home" className="image-size" src="/img/in1.jpg" />
+        </div>
+        <div className="col-lg-6 col-md-6 col-sm-6 col-xm-12 center-xm">
+          <img alt="Home" className="image-size" src="/img/in2.jpg" />
+        </div>
+      </div>
     </div>
   );
 };

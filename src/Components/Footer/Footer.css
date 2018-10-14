@@ -2,3 +2,35 @@
   text-align: center !important;
   justify-content: center !important;
 }
+.page-footer {
+  -webkit-font-smoothing: antialiased;
+  text-align: center;
+  position: relative;
+  z-index: 0;
+  font-size: 15px;
+  box-sizing: border-box;
+  background: rgb(29, 28, 28);
+  color: #fff;
+  padding: 20px;
+}
+
+.social-font {
+  height: 30px;
+  width: 30px;
+  margin-top: 0;
+  margin-right: 8px;
+}
+.privacy {
+  justify-content: center;
+}
+.policy {
+  margin-right: 20px;
+  cursor: pointer;
+}
+.policy1 {
+  margin-left: 20px;
+  cursor: pointer;
+}
+.margin-separator {
+  margin-right: 5px;
+}

@@ -1,3 +1,5 @@
+@import '../../../Common/flexbogrid.css';
+
 .imgSize {
   height: 100%;
   width: 450px;
@@ -34,4 +36,9 @@
 }
 .ui.fluid.image {
   height: 500px !important;
+}
+
+.image-size {
+  width: 623px;
+  height: 360px !important;
 }

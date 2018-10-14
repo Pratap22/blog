@@ -9,7 +9,6 @@ const Body = ({ path }) => {
   return (
     <div className="bodyClass">
       {(() => {
-        console.log(path);
         switch (path) {
           case 'home':
             return <Home />;
@@ -19,6 +18,8 @@ const Body = ({ path }) => {
             return <Nepal />;
           case 'bt':
             return <Bhutan />;
+          default:
+            return 'Not Found';
         }
       })()}
     </div>

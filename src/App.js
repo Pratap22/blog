@@ -4,8 +4,6 @@ import BlogHeader from './Components/BlogHeader/BlogHeader.js';
 import Body from './Components/Body/Body';
 import Footer from './Components/Footer/Footer';
 const initialState = {
-  value: '',
-  country: '',
   path: 'home'
 };
 
@@ -25,8 +23,8 @@ class App extends Component {
   render() {
     return (
       <div>
-        <BlogHeader />
-        <CountryDropdown onDropdownChange={this.onDropdownChange} onStateChange={this.onStateChange} />
+        <BlogHeader onDropdownChange={this.onDropdownChange} />
+        <CountryDropdown onStateChange={this.onStateChange} />
         <Body path={this.state.path} />
         {/* <Signin />
                 <Register /> */}

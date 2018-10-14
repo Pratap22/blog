@@ -1,40 +1,88 @@
 import React from 'react';
 import './BlogHeader.css';
-import facebook from './facebook.png';
-import twitter from './twitter.png';
-import linkedin from './linkedin.png';
-import globe from './globe.gif';
+import { Dropdown } from 'semantic-ui-react';
+import * as Options from './countries';
 
-const BlogHeader = () => {
+const BlogHeader = ({ onDropdownChange }) => {
+  function collapseFunction() {
+    var x = document.getElementById('myTopnav');
+    if (x.className === 'topnav') {
+      x.className += ' responsive';
+    } else {
+      x.className = 'topnav';
+    }
+  }
   return (
-    <div>
-      <div className="header-content">
-        <div className="globe-size">
-          <img alt="Globe" src={globe} />
+    <div className="nav-bar">
+      <div className="countryDropdown flexrow">
+        <div className="col-lg-1 col-md-1 col-xs-1 ">
+          <img className="globe-size" alt="Globe" src="/img/globe.gif" />
         </div>
-        <div className="welcome">
-          <h1>World Destinations</h1>
-          <p>Welcome to World Destinations! Explore every destinations of the world.</p>
-        </div>
-        <div>
-          <div>
-            <ul className="social-icons">
-              <li>
-                <a id="fb" href="http://www.facebook.com/prataps22" target="_blank" rel="noopener noreferrer">
-                  <img alt="facebook" src={facebook} />
-                </a>
-              </li>
-              <li>
-                <a href="https://twitter.com/Pratap2210" target="_blank" rel="noopener noreferrer">
-                  <img alt="twitter" src={twitter} />
-                </a>
-              </li>
-              <li>
-                <a href="https://www.linkedin.com/in/prataps22/" target="_blank" rel="noopener noreferrer">
-                  <img alt="linkedin" src={linkedin} />
-                </a>
-              </li>
-            </ul>
+        <div className="col-lg-11 col-md-11 col-xs-11 popup menu-item visible col-xs-1 end-xs end-sm end-md end-lg">
+          <div className="topnav" id="myTopnav">
+            <a>
+              <Dropdown
+                className="countrycss small"
+                placeholder="Asia"
+                search
+                selection
+                options={Options.asiaOptions}
+                onChange={onDropdownChange}
+              />
+            </a>
+            <a>
+              <Dropdown
+                className="countrycss small"
+                placeholder="Europe"
+                search
+                selection
+                options={Options.europeOptions}
+                onChange={onDropdownChange}
+              />
+            </a>
+            <a>
+              <Dropdown
+                className="countrycss small"
+                placeholder="Africa"
+                search
+                selection
+                options={Options.africaOptions}
+                onChange={onDropdownChange}
+              />
+            </a>
+            <a>
+              <Dropdown
+                className="countrycss1 small"
+                placeholder="North America"
+                search
+                selection
+                options={Options.northAmericaOptions}
+                onChange={onDropdownChange}
+              />
+            </a>
+            <a>
+              <Dropdown
+                className="countrycss1 small"
+                placeholder="South America"
+                search
+                selection
+                options={Options.southAmericaOptions}
+                onChange={onDropdownChange}
+              />
+            </a>
+            <a>
+              <Dropdown
+                className="countrycss small"
+                placeholder="Oceania"
+                search
+                selection
+                options={Options.oceania}
+                onChange={onDropdownChange}
+              />
+            </a>
+            <a className="icon" id="iconId" onClick={collapseFunction}>
+              &#9776;
+            </a>
           </div>
         </div>
       </div>
