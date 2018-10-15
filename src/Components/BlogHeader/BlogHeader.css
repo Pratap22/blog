@@ -101,7 +101,7 @@ placeholder {
   }
 
   .topnav.responsive {
-    display: block;
+    display: inline-block;
     width: 400%;
     text-align: right;
     float: right;

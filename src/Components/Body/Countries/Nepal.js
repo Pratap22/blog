@@ -5,8 +5,11 @@ import { Item, List, Image } from 'semantic-ui-react';
 const Nepal = () => {
   return (
     <div>
-      <div>
+      <div className="image">
         <Image src="/img/np7.jpg" fluid rounded />
+        <h2 className="image-text">
+          <span className="image-span">Welcome to Nepal: The land of Himalayas and Temples </span>
+        </h2>
       </div>
       <Item.Group>
         <Item>

@@ -42,3 +42,23 @@
   width: 623px;
   height: 360px !important;
 }
+
+.image {
+  position: relative;
+  width: 100%; /* for IE 6 */
+}
+
+.image-text {
+  position: absolute;
+  top: 1px;
+  left: 50px;
+  width: 100%;
+  color: aliceblue;
+}
+.image-span {
+  font: bold 34px/60px Helvetica, Sans-Serif;
+  letter-spacing: -1px;
+  background: rgb(0, 0, 0); /* fallback color */
+  background: rgba(0, 0, 0, 0.7);
+  padding: 10px;
+}
