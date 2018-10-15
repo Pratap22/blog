@@ -1,4 +1,5 @@
 @import '../../../Common/flexbogrid.css';
+@import '../../../Common/card.css';
 
 .imgSize {
   height: 100%;
@@ -41,9 +42,10 @@
 .image-size {
   width: 623px;
   height: 360px !important;
+  margin-top: 7px;
 }
 
-.image {
+.image-header {
   position: relative;
   width: 100%; /* for IE 6 */
 }
@@ -51,7 +53,7 @@
 .image-text {
   position: absolute;
   top: 1px;
-  left: 50px;
+  left: 25px;
   width: 100%;
   color: aliceblue;
 }
@@ -61,4 +63,23 @@
   background: rgb(0, 0, 0); /* fallback color */
   background: rgba(0, 0, 0, 0.7);
   padding: 10px;
+}
+.ui.cards > .card,
+.ui.card {
+  width: 100% !important;
+}
+.image-div {
+  margin-top: 12px;
+  margin-bottom: 8px;
+}
+
+.meta {
+  color: darkslategrey !important;
+  font-size: 19px !important;
+}
+
+@media only screen and (max-width: 47.99em) {
+  .image-span {
+    font: bold 30px/50px Helvetica, Sans-Serif;
+  }
 }

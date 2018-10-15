@@ -6,8 +6,8 @@ h1 {
 .globe-size {
   display: inline-block;
   list-style-type: none;
-  width: 40px !important;
-  height: 40px !important;
+  width: 35px !important;
+  height: 35px !important;
   margin-top: 1px !important;
   margin-right: 5px !important;
 }
@@ -45,7 +45,7 @@ placeholder {
 }
 
 .countryDropdown {
-  margin-top: 5px;
+  margin-top: 3px;
 }
 
 .ui.button {
@@ -61,7 +61,7 @@ placeholder {
 }
 .icon {
   font-size: 30px;
-  margin-top: 11px !important;
+  margin-top: 8px !important;
 }
 .topnav .icon {
   display: none;

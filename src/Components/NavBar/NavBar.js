@@ -1,11 +1,14 @@
 import React from 'react';
-import './countries.css';
+import './NavBar.css';
 import { Icon } from 'semantic-ui-react';
 
-const CountryDropdown = ({ onStateChange }) => {
+const NavBar = ({ onStateChange }) => {
   return (
     <div className="countryDropdown flexrow">
-      <div className="col-lg-1 col-md-1 col-xs-1 ">
+      <div className="col-lg-6 col-md-6 col-xs-6 ">
+        <img className="globe-size" alt="Globe" src="/img/globe.gif" />
+      </div>
+      <div className="col-lg-6 col-md-6 col-xs-6 end-xs end-md end-lg home">
         <div className="ui extra-small button" value="home" tabIndex="0" onClick={onStateChange}>
           <Icon name="home" />
           Home
@@ -15,4 +18,4 @@ const CountryDropdown = ({ onStateChange }) => {
   );
 };
 
-export default CountryDropdown;
+export default NavBar;
