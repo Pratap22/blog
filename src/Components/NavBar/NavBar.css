@@ -8,3 +8,7 @@ placeholder {
 .home {
   margin-top: 5px;
 }
+
+.flag-gif {
+  flex-basis: 0% !important;
+}

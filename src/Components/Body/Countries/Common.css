@@ -95,6 +95,12 @@
   margin-top: 6px !important;
   margin-left: -23px !important;
 }
+
+.place-image {
+  margin-right: 17px;
+  width: 120em;
+}
+
 @media only screen and (max-width: 47.99em) {
   .image-span {
     font: bold 30px/50px Helvetica, Sans-Serif;
@@ -112,5 +118,41 @@
     width: 58px;
     height: 58px;
     margin-right: 5px;
+  }
+}
+
+@media only screen and (max-width: 529px) {
+  .image-span {
+    font: bold 20px/50px Helvetica, Sans-Serif;
+  }
+  .h1-height {
+    font-size: 2.085714rem;
+    margin-top: 10px !important;
+    margin-left: -40px !important;
+    justify-content: left !important;
+  }
+  .h3-height {
+    font-size: 1.385714rem;
+    margin: -7px;
+  }
+  .nepal-gif {
+    width: 58px;
+    height: 58px;
+    margin-right: 5px;
+  }
+  .image-text {
+    left: 8px;
+  }
+  .imgSize {
+    height: 300px;
+    width: 100%;
+  }
+  .ui.fluid.image {
+    height: 300px !important;
+  }
+  .place-image {
+    margin-right: 17px;
+    margin-bottom: 5px;
+    width: 100%;
   }
 }

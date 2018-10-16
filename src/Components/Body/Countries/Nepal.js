@@ -1,23 +1,22 @@
 import React from 'react';
 import '../Body';
 import './Common.css';
-import { Image } from 'semantic-ui-react';
 const Nepal = () => {
   return (
     <div>
       <div className="image-header">
-        <Image src="/img/np7.jpg" fluid rounded />
+        <img alt="Nepal" className="ui fluid rounded image" src="/img/np7.jpg" />
         <h2 className="image-text">
           <span className="image-span">
-            Welcome to Nepal: <br /> The land of Himalayas and Temples{' '}
+            Welcome to Nepal : <br /> The land of Himalayas and Temples{' '}
           </span>
         </h2>
       </div>
       <div className="flexrow center-xs">
-        <div className="col-lg-4 col-md-4 end-lg end-xs end-sm end-md">
-          <img className="nepal-gif" alt="Nepal" src="/img/nepal.gif" />
+        <div className="col-lg-4 col-md-4 col-xs-2 end-lg end-xs end-sm end-md">
+          <img className="nepal-gif center" alt="Nepal" src="/img/nepal.gif" />
         </div>
-        <div className="col-lg-8 col-md-8 ">
+        <div className="col-lg-8 col-md-8 col-xs-10 ">
           <h1 className="start-lg start-md h1-height">Welcome to Nepal</h1>
         </div>
         <h3 className="h3-height">Where you meet the Himalayas and Cultures</h3>
@@ -28,6 +27,35 @@ const Nepal = () => {
           <div className="meta">
             <span>Land of Cultures</span>
           </div>
+          <div className="ui list">
+            <div className="item">
+              <i className="map marker icon" />
+              <div className="content">
+                <h3 className="header">
+                  The Nepal flag is the only national flag that is not quadrilateral in shape. It is made of two
+                  triangles
+                </h3>
+              </div>
+            </div>
+            <div className="item">
+              <i className="map marker icon" />
+              <div className="content">
+                <h3 className="header">Nepal is the birthplace of Lord Gautam Buddha </h3>
+              </div>
+            </div>
+            <div className="item">
+              <i className="map marker icon" />
+              <div className="content">
+                <h3 className="header">Nepal has the only living goddess in the world, the Kumari</h3>
+              </div>
+            </div>
+            <div className="item">
+              <i className="map marker icon" />
+              <div className="content">
+                <h3 className="header">Major Part Of Himalayas is In Nepal</h3>
+              </div>
+            </div>
+          </div>
           <p>
             Nepal, the landlocked multiethnic, multilingual, multi-religious country, is situated north of India in the
             Himalayas, in the region where, about 40 to 50 million years ago, the Indian subcontinent has crashed into
@@ -36,8 +64,8 @@ const Nepal = () => {
             towering above populated valleys and forested plains.
           </p>
           <div className="flexrow image-div">
-            <img className="col-lg-6 col-md-6 col-sm-6 col-xm-12 image-size" alt="Nepal" src="/img/np1.jpg" />
-            <img className="col-lg-6 col-md-6 col-sm-6 col-xm-12 image-size" alt="Nepal" src="/img/np2.jpg" />
+            <img className="col-lg-6 col-md-6 col-sm-6 col-xm-12 ui image image-size" alt="Nepal" src="/img/np1.jpg" />
+            <img className="col-lg-6 col-md-6 col-sm-6 col-xm-12 ui image image-size" alt="Nepal" src="/img/np2.jpg" />
           </div>
           <p>
             Somewhere here in the Kapilavastu district, there is a place called Lumbini where in about 500 B.C.E. Queen
@@ -56,7 +84,45 @@ const Nepal = () => {
           </p>
         </div>
       </div>
-      <div />
+      <div className="center-xs">
+        <h3 className="h3-height">Places to visit in Nepal</h3>
+      </div>
+      <div className="ui items">
+        <div className="item">
+          <div className="place-image">
+            <img alt="Kathmandu" src="/img/np3.jpg" />
+          </div>
+          <div className="content">
+            <a className="header">Kathmandu</a>
+            <div className="meta">
+              <span>Description</span>
+            </div>
+            <div className="description">
+              <p>
+                Kathmandu, Nepal's capital, is set in a valley surrounded by the Himalayan mountains. At the heart of
+                the old city’s mazelike alleys is Durbar Square, which becomes frenetic during Indra Jatra, a religious
+                festival featuring masked dances. Many of the city's historic sites were damaged or destroyed by a 2015
+                earthquake. Durbar Square's palace, Hanuman Dhoka, and Kasthamandap, a wooden Hindu temple, are being
+                rebuilt.
+              </p>
+            </div>
+            <div className="ui list">
+              <div className="item">
+                <i className="caret right icon" />
+                <div className="content">
+                  <h3>Thamel</h3>
+                </div>
+              </div>
+              <div className="item">
+                <i className="caret right icon" />
+                <div className="content">
+                  <h3>Pashupatinath Temple</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
