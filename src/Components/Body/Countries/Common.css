@@ -1,5 +1,4 @@
 @import '../../../Common/flexbogrid.css';
-@import '../../../Common/card.css';
 
 .imgSize {
   height: 100%;
@@ -78,8 +77,40 @@
   font-size: 19px !important;
 }
 
+.border-bottom {
+  border-bottom: 1px solid rgba(34, 36, 38, 0.15);
+}
+.nepal-gif {
+  flex-basis: 0% !important;
+}
+.ui.icon.header {
+  display: block;
+}
+.h3-height {
+  font-size: 2.185714rem;
+  margin: -10px;
+}
+.h1-height {
+  font-size: 4.085714rem;
+  margin-top: 6px !important;
+  margin-left: -23px !important;
+}
 @media only screen and (max-width: 47.99em) {
   .image-span {
     font: bold 30px/50px Helvetica, Sans-Serif;
+  }
+  .h1-height {
+    font-size: 2.585714rem;
+    margin-top: 3px !important;
+    margin-left: -17px !important;
+  }
+  .h3-height {
+    font-size: 1.385714rem;
+    margin: -7px;
+  }
+  .nepal-gif {
+    width: 58px;
+    height: 58px;
+    margin-right: 5px;
   }
 }

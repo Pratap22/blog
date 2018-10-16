@@ -4,6 +4,7 @@ import India from './Countries/India';
 import Home from './Countries/Home';
 import Nepal from './Countries/Nepal';
 import Bhutan from './Countries/Bhutan';
+import DefaultWindow from './Countries/DefaultWindow';
 
 const Body = ({ path }) => {
   return (
@@ -19,7 +20,7 @@ const Body = ({ path }) => {
           case 'bt':
             return <Bhutan />;
           default:
-            return 'Not Found';
+            return <DefaultWindow />;
         }
       })()}
     </div>
