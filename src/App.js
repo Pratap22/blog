@@ -23,11 +23,9 @@ class App extends Component {
   render() {
     return (
       <div>
-        <NavBar onStateChange={this.onStateChange} path={this.state.path} />
+        <NavBar onStateChange={this.onStateChange} />
         <Country onDropdownChange={this.onDropdownChange} />
         <Body path={this.state.path} />
-        {/* <Signin />
-                <Register /> */}
         <Footer />
       </div>
     );

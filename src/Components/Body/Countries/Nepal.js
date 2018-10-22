@@ -1,7 +1,10 @@
 import React from 'react';
 import '../Body';
 import './Common.css';
+// import SlideShowModel from '../../../Models/SlideShowModel';
 const Nepal = () => {
+  // var images = [`/img/np1.jpg`, `/img/np2.jpg`, `/img/np3.jpg`];
+
   return (
     <div>
       <div className="image-header">
@@ -91,6 +94,7 @@ const Nepal = () => {
         <div className="item">
           <div className="place-image">
             <img alt="Kathmandu" src="/img/np3.jpg" />
+            {/* <SlideShowModel images={images} /> */}
           </div>
           <div className="content">
             <a className="header">Kathmandu</a>
@@ -106,17 +110,83 @@ const Nepal = () => {
                 rebuilt.
               </p>
             </div>
-            <div className="ui list">
-              <div className="item">
-                <i className="caret right icon" />
-                <div className="content">
-                  <h3>Thamel</h3>
+            <div className="flexrow">
+              <div className="ui list col-lg-4 list-items">
+                <div className="item">
+                  <i className="caret right icon" />
+                  <div className="content">
+                    <h3>Thamel</h3>
+                  </div>
+                </div>
+                <div className="item">
+                  <i className="caret right icon" />
+                  <div className="content">
+                    <h3>Pashupatinath Temple</h3>
+                  </div>
+                </div>
+                <div className="item">
+                  <i className="caret right icon" />
+                  <div className="content">
+                    <h3>Buddha NilKantha</h3>
+                  </div>
+                </div>
+                <div className="item">
+                  <i className="caret right icon" />
+                  <div className="content">
+                    <h3>Durbar Square</h3>
+                  </div>
                 </div>
               </div>
-              <div className="item">
-                <i className="caret right icon" />
-                <div className="content">
-                  <h3>Pashupatinath Temple</h3>
+              <div className="ui list col-lg-4 list-items">
+                <div className="item">
+                  <i className="caret right icon" />
+                  <div className="content">
+                    <h3>Hanuman Dhoka</h3>
+                  </div>
+                </div>
+                <div className="item">
+                  <i className="caret right icon" />
+                  <div className="content">
+                    <h3>Garden of Dreams</h3>
+                  </div>
+                </div>
+                <div className="item">
+                  <i className="caret right icon" />
+                  <div className="content">
+                    <h3>Syambhunath Temple</h3>
+                  </div>
+                </div>
+                <div className="item">
+                  <i className="caret right icon" />
+                  <div className="content">
+                    <h3>Kumari Bahal</h3>
+                  </div>
+                </div>
+              </div>
+              <div className="ui list col-lg-4 list-items">
+                <div className="item">
+                  <i className="caret right icon" />
+                  <div className="content">
+                    <h3>Hanuman Dhoka</h3>
+                  </div>
+                </div>
+                <div className="item">
+                  <i className="caret right icon" />
+                  <div className="content">
+                    <h3>Garden of Dreams</h3>
+                  </div>
+                </div>
+                <div className="item">
+                  <i className="caret right icon" />
+                  <div className="content">
+                    <h3>Syambhunath Temple</h3>
+                  </div>
+                </div>
+                <div className="item">
+                  <i className="caret right icon" />
+                  <div className="content">
+                    <h3>Kumari Bahal</h3>
+                  </div>
                 </div>
               </div>
             </div>
