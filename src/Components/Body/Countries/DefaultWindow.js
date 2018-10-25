@@ -5,13 +5,13 @@ import './Common.css';
 const Bhutan = () => {
   return (
     <div className="center">
-      <div class="ui placeholder segment">
-        <div class="ui icon header center-lg">
-          <i class="search icon" />
+      <div className="ui placeholder segment">
+        <div className="ui icon header center-lg">
+          <i className="search icon" />
           We don't have blogs matching to your query! Will be adding soon
         </div>
-        <div class="inline center-lg">
-          <button class="ui grey button large">Request Blog</button>
+        <div className="inline center-lg">
+          <button className="ui grey button large">Request Blog</button>
         </div>
       </div>
     </div>

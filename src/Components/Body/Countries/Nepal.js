@@ -1,9 +1,9 @@
 import React from 'react';
 import '../Body';
 import './Common.css';
-// import SlideShowModel from '../../../Models/SlideShowModel';
+import SlideShowModel from '../../../Slider/SlideShowModel';
 const Nepal = () => {
-  // var images = [`/img/np1.jpg`, `/img/np2.jpg`, `/img/np3.jpg`];
+  var images = [`/img/np1.jpg`, `/img/np2.jpg`, `/img/np3.jpg`];
 
   return (
     <div>
@@ -93,8 +93,8 @@ const Nepal = () => {
       <div className="ui items">
         <div className="item">
           <div className="place-image">
-            <img alt="Kathmandu" src="/img/np3.jpg" />
-            {/* <SlideShowModel images={images} /> */}
+            {/* <img alt="Kathmandu" src="/img/np3.jpg" /> */}
+            <SlideShowModel sliderImage={images} />
           </div>
           <div className="content">
             <a className="header">Kathmandu</a>

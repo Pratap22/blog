@@ -97,8 +97,10 @@
 }
 
 .place-image {
+  position: relative;
   margin-right: 17px;
-  width: 120em;
+  width: 125em;
+  height: 283px;
 }
 
 @media only screen and (max-width: 47.99em) {

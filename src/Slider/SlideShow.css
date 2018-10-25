@@ -1,0 +1,42 @@
+.arrow {
+  top: 50%;
+  z-index: 2;
+  color: rgb(236, 155, 3);
+  position: absolute;
+  -ms-flex-pack: distribute;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  font-size: 50px;
+}
+.arrow-direction {
+  font-size: 1.3em !important;
+}
+.arrow-direction:hover {
+  cursor: pointer;
+}
+.dots {
+  top: 90%;
+  z-index: 2;
+  color: rgb(236, 155, 3);
+  position: absolute;
+  -ms-flex-pack: distribute;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  font-size: 40px;
+}
+.selection-dots:hover {
+  cursor: pointer;
+  color: rgb(196, 146, 54);
+  font-size: 32px !important;
+}
+.selection-dots {
+  font-size: 0.45em !important;
+}
+
+.slider-image {
+  height: 100%;
+  width: 100%;
+}
