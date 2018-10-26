@@ -1,37 +1,30 @@
-import React from 'react';
-import '../Body';
-import './Common.css';
-import { Item, Image } from 'semantic-ui-react';
+// import React, { Component } from 'react';
+// import '../Body';
+// import './Common.css';
 
-const Bhutan = () => {
-  return (
-    <Item.Group>
-      <Item>
-        <Item.Image size="large" src="https://react.semantic-ui.com/images/wireframe/image.png" />
-
-        <Item.Content>
-          <Item.Header as="a">Header</Item.Header>
-          <Item.Meta>Description</Item.Meta>
-          <Item.Description>
-            <Image src="https://react.semantic-ui.com/images/wireframe/short-paragraph.png" />
-          </Item.Description>
-          <Item.Extra>Additional Details</Item.Extra>
-        </Item.Content>
-      </Item>
-
-      <Item>
-        <Item.Image size="large" src="https://react.semantic-ui.com/images/wireframe/image.png" />
-
-        <Item.Content>
-          <Item.Header as="a">Header</Item.Header>
-          <Item.Meta>Description</Item.Meta>
-          <Item.Description>
-            <Image src="https://react.semantic-ui.com/images/wireframe/short-paragraph.png" />
-          </Item.Description>
-          <Item.Extra>Additional Details</Item.Extra>
-        </Item.Content>
-      </Item>
-    </Item.Group>
-  );
-};
-export default Bhutan;
+// class Bhutan extends Component {
+//   render() {
+//     return (
+//       <div>
+//         <div className="image-header">
+//           <img alt="Bhutan" className="ui fluid rounded image" src={hi} />
+//           <h2 className="image-text">
+//             <span className="image-span">
+//               Welcome to {bhutanData.countryName} : <br /> {ht}
+//             </span>
+//           </h2>
+//         </div>
+//         <div className="flexrow center-xs">
+//           <div className="col-lg-4 col-md-4 col-xs-2 end-lg end-xs end-sm end-md">
+//             <img className="nepal-gif center" alt="Nepal" src={bhutanData.flag} />
+//           </div>
+//           <div className="col-lg-8 col-md-8 col-xs-10 ">
+//             <h1 className="start-lg start-md h1-height">Welcome to {bhutanData.countryName}</h1>
+//           </div>
+//           <h3 className="h3-height">{c}</h3>
+//         </div>
+//       </div>
+//     );
+//   }
+// }
+// export default Bhutan;

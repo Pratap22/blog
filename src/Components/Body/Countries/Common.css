@@ -82,6 +82,8 @@
 }
 .nepal-gif {
   flex-basis: 0% !important;
+  height: 78px;
+  margin-right: 5px;
 }
 .ui.icon.header {
   display: block;

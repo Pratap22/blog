@@ -3,24 +3,28 @@ import Country from './Components/Country/Country.js';
 import NavBar from './Components/NavBar/NavBar.js';
 import Body from './Components/Body/Body';
 import Footer from './Components/Footer/Footer';
-import data from './data';
+import countries from './Components/Body/Countries/Countrydata';
 
 const initialState = {
-  path: 'home'
+  path: 'home',
+  country: {}
 };
 
 class App extends Component {
   constructor() {
     super();
     this.state = initialState;
-    console.log(data.continents[0].name);
   }
   onDropdownChange = (e, drop) => {
-    this.setState({ path: drop.value });
+    const countryA = countries.filter(country => country.countryCode === drop.value);
+    if (countryA.length === 1) {
+      this.setState({ path: drop.value, country: countryA[0] });
+    }
   };
   onStateChange = () => {
     this.setState({
-      path: 'home'
+      path: 'home',
+      countryDetail: {}
     });
   };
   render() {
@@ -28,7 +32,7 @@ class App extends Component {
       <div>
         <NavBar onStateChange={this.onStateChange} />
         <Country onDropdownChange={this.onDropdownChange} />
-        <Body path={this.state.path} />
+        <Body path={this.state.path} country={this.state.country} />
         <Footer />
       </div>
     );

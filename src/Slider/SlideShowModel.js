@@ -5,9 +5,7 @@ class SlideShowModel extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      slideIndex: 0,
-      showDots: true,
-      autoplay: true
+      slideIndex: 0
     };
   }
 
@@ -61,7 +59,9 @@ class SlideShowModel extends Component {
   };
 
   componentDidMount() {
-    setInterval(this.goToNext, 5000);
+    if (this.props.autoplay) {
+      setInterval(this.goToNext, 3000);
+    }
   }
 
   render() {
@@ -72,7 +72,7 @@ class SlideShowModel extends Component {
           <i className="angle left icon arrow-direction" onClick={this.goToPrevious} />
           <i className="angle right icon arrow-direction" onClick={this.goToNext} />
         </div>
-        {this.state.showDots ? (
+        {this.props.showDots ? (
           <div className="dots">
             <i className="circle icon selection-dots" onClick={this.dotSelection.bind(this, 0)} />
             <i className="circle icon selection-dots" onClick={this.dotSelection.bind(this, 1)} />
