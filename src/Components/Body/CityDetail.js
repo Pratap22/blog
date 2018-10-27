@@ -4,15 +4,15 @@ import SlideShowModel from '../../Slider/SlideShowModel';
 class CityDetail extends Component {
   getCity(cities) {
     var citiesArr = [];
+
     cities.forEach((city, index) => {
-      console.log(city.desc);
       citiesArr.push(
-        <div className="item">
+        <div className="item" key={`city-${index}`}>
           <div className="place-image">
-            {/* <SlideShowModel sliderImage={this.props.images} autoplay={true} showDots={true} /> */}
+            {this.getImages(city.images)}
           </div>
 
-          <div className="content" key={`city-${index}`}>
+          <div className="content" >
             <a className="header">{city.name} </a>
             <div className="meta">
               <span>Description</span>
@@ -26,6 +26,10 @@ class CityDetail extends Component {
       );
     });
     return citiesArr;
+  }
+  getImages (images) {
+   return <SlideShowModel sliderImage={images} autoplay={true} showDots={true} />
+
   }
   getSubPlaces(cityName, subPlaces) {
     var placesArr = [];
@@ -65,7 +69,6 @@ class CityDetail extends Component {
   }
   render() {
     const city = this.props.cities;
-    console.log(city);
     return <div className="ui items">{this.getCity(city)}</div>;
   }
 }

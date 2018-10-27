@@ -58,6 +58,16 @@ class SlideShowModel extends Component {
     }
   };
 
+  getDots () {
+    const images = this.props.sliderImage;
+   var dotsArray = [];
+   images.forEach((curval, i) => dotsArray.push(
+    <div className="dots">
+    <i className="circle icon selection-dots" onClick={this.dotSelection.bind(this, i)} />
+    </div>
+   ))
+  }
+
   componentDidMount() {
     if (this.props.autoplay) {
       setInterval(this.goToNext, 3000);
