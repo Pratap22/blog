@@ -28,7 +28,7 @@ class CityDetail extends Component {
     return citiesArr;
   }
   getImages (images) {
-   return <SlideShowModel sliderImage={images} autoplay={true} showDots={true} />
+   return <SlideShowModel sliderImage={images} autoplay={false} showDots={true} />
 
   }
   getSubPlaces(cityName, subPlaces) {

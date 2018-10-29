@@ -41,31 +41,23 @@ class SlideShowModel extends Component {
     }
   };
 
+  // Setting onClick function for dots
   dotSelection = n => {
-    console.log(n);
-    if (n === 0) {
-      this.setState({
-        slideIndex: 0
-      });
-    } else if (n === 1) {
-      this.setState({
-        slideIndex: 1
-      });
-    } else if ((n = 2)) {
-      this.setState({
-        slideIndex: 2
-      });
-    }
+    this.setState({
+      slideIndex : n
+    })
   };
 
+// Setting no. of dots for number of images
   getDots () {
-    const images = this.props.sliderImage;
-   var dotsArray = [];
-   images.forEach((curval, i) => dotsArray.push(
-    <div className="dots">
-    <i className="circle icon selection-dots" onClick={this.dotSelection.bind(this, i)} />
-    </div>
-   ))
+   const images = this.props.sliderImage.length;
+    var dotsArray = [];
+    for(var i=0; i<images; i++){
+      dotsArray.push(
+        <i className="circle icon selection-dots" key={`dots-${i}`} onClick={this.dotSelection.bind(this, i)} />
+      )
+    }
+    return dotsArray;
   }
 
   componentDidMount() {
@@ -84,9 +76,7 @@ class SlideShowModel extends Component {
         </div>
         {this.props.showDots ? (
           <div className="dots">
-            <i className="circle icon selection-dots" onClick={this.dotSelection.bind(this, 0)} />
-            <i className="circle icon selection-dots" onClick={this.dotSelection.bind(this, 1)} />
-            <i className="circle icon selection-dots" onClick={this.dotSelection.bind(this, 2)} />
+           {this.getDots()}
           </div>
         ) : null}
       </div>

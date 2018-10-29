@@ -46,11 +46,9 @@ class CountryDetail extends Component {
             </span>
           </h2>
         </div>
-        <div className="flexrow center-xs">
-          <div className="col-lg-4 col-md-4 col-xs-2 end-lg end-xs end-sm end-md">
-            <img className="nepal-gif center" alt="Nepal" src={country.flag} />
-          </div>
-          <div className="col-lg-8 col-md-8 col-xs-10 ">
+        <div className="center-xs">
+          <div className="flexrow center-xs">
+            <img className="nepal-gif" alt="Nepal" src={country.flag} />
             <h1 className="start-lg start-md h1-height">{country.countryName} </h1>
           </div>
           <h3 className="h3-height">{cd.caption}</h3>
