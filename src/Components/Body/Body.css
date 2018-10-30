@@ -1,3 +1,14 @@
 .bodyClass {
   margin-top: 10px;
 }
+.place-detail:hover {
+  cursor: pointer;
+}
+.place-image {
+  height: 300px;
+  width: 300px;
+}
+.header {
+  font-size: 25px;
+  font-weight: 700;
+}

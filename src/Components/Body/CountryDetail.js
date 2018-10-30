@@ -66,7 +66,7 @@ class CountryDetail extends Component {
           </div>
         </div>
         <div className="center-xs">
-          <h3 className="h3-height">Places to visit in {country.countryName}</h3>
+          <h3 className="h3-height">Destinations to visit in {country.countryName}</h3>
         </div>
         <CityDetail cities={cid} />
       </div>

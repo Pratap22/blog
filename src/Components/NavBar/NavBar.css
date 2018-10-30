@@ -12,3 +12,6 @@ placeholder {
 .flag-gif {
   flex-basis: 0% !important;
 }
+.globe-size:hover {
+  cursor: pointer;
+}
