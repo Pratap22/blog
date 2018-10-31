@@ -5,15 +5,15 @@ class SlideShowModel extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      slideIndex: 0
+      slideIndex: 0,
+      autoplay: this.props.autoplay
     };
   }
 
   getImage = () => {
     var images = this.props.sliderImage;
-    return <img className="slider-image" alt="sliderImage" src={images[this.state.slideIndex]} />;
+    return <img className="slider-image"  alt="sliderImage" src={images[this.state.slideIndex]} />;
   };
-
   goToPrevious = () => {
     if (this.state.slideIndex === 0) {
       this.setState({
@@ -61,7 +61,7 @@ class SlideShowModel extends Component {
   }
 
   componentDidMount() {
-    if (this.props.autoplay) {
+    if (this.state.autoplay) {
       setInterval(this.goToNext, 3000);
     }
   }

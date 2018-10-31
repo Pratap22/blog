@@ -12,3 +12,45 @@
   font-size: 25px;
   font-weight: 700;
 }
+
+.ReactModal__Overlay {
+  z-index: 2;
+}
+.ui.button {
+  line-height: 2.25 !important;
+}
+
+.ReactModal__Content {
+  left: 180px !important;
+  right: 180px !important;
+}
+@media only screen and (max-width: 47.99em) {
+  .mobile-view {
+    margin-top: 67px !important;
+  }
+  .places-view {
+    margin-top: 380px;
+  }
+  .ReactModal__Content {
+    left: 10px !important;
+    right: 10px !important;
+  }
+}
+@media only screen and (max-width: 529px) {
+  .mobile-view {
+    margin-top: 72px !important;
+  }
+  .places-view {
+    margin-top: 550px;
+  }
+  .ReactModal__Content {
+    left: 10px !important;
+    right: 10px !important;
+  }
+  .place-detail {
+    font-size: 14px;
+  }
+}
+.places-view {
+  position: initial;
+}

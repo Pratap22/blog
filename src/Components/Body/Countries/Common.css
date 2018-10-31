@@ -90,6 +90,7 @@
 .h3-height {
   font-size: 2.185714rem;
   margin: -10px;
+  margin-bottom: 13px !important;
 }
 .h1-height {
   font-size: 4.085714rem;
@@ -138,17 +139,17 @@
   .h1-height {
     font-size: 2.085714rem;
     margin-top: 10px !important;
-    margin-left: -40px !important;
+    margin-left: -10px !important;
     justify-content: left !important;
   }
   .h3-height {
-    font-size: 1.385714rem;
+    font-size: 1.285714rem;
     margin: -7px;
   }
   .nepal-gif {
     width: 58px;
     height: 58px;
-    margin-right: 5px;
+    margin-right: 2px;
   }
   .image-text {
     left: 8px;

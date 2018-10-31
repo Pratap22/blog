@@ -1,28 +1,30 @@
 import React from 'react';
-import {observable, action} from 'mobx';
-import {observer} from 'mobx-react';
+import Modal from 'react-modal';
 
-@observer
-class Modal extends React.PureComponent {
-    @observable isOpen = false;
-    @action open = (e) => {
-        if(e) {
-            e.preventDefault();
-            this.isOpen = true;
-        }
-    }
-    @action close = (e) => {
-        if(e) {
-            e.preventDefault();
-            this.isOpen = false;
-        }
-    }
+class ModalModel extends React.Component {
+   constructor(){
+       super();
+       this.state = {
+           isActive: true
+       }
+   }
+   toggleModal = () => {
+       this.setState({
+           isActive:!this.state.isActive
+       })
+   }
+   componentWillMount () {
+       Modal.setAppElement('body');
+   }
     render () {
+        console.log(this.props.place)
         return(
-            <div id="modal">
-
+            <div>
+                <Modal isOpen={this.state.isActive}>
+                    Hello From Modal
+                </Modal>
             </div>
         )
     }
 }
-export default Modal;
+export default ModalModel;
